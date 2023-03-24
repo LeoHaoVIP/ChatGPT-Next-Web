@@ -115,7 +115,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   submitKey: SubmitKey.Enter as SubmitKey,
   avatar: "1f603",
   theme: Theme.Auto as Theme,
-  tightBorder: false,
+  tightBorder: true,
 
   modelConfig: {
     model: "gpt-3.5-turbo",
