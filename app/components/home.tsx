@@ -28,11 +28,22 @@ import Locale from "../locales";
 import dynamic from "next/dynamic";
 import { REPO_URL } from "../constant";
 
+const allowedUsers: string[] = ['LeoHaoVIP', '赵文静', '赵梦静', '万志强', '谢宇', '杨明明'];
+
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"]}>
       {!props.noLogo && <BotIcon />}
       <LoadingIcon />
+    </div>
+  );
+}
+
+export function NoAccess(props: { noLogo?: boolean }) {
+  return (
+    <div className={styles["loading-content"]}>
+      {!props.noLogo && <BotIcon />}
+        无访问权限
     </div>
   );
 }
@@ -427,6 +438,12 @@ function showMemoryPrompt(session: ChatSession) {
 }
 
 export function Home() {
+    //验证用户身份
+    const username: string | null = prompt('输入您的中文姓名以验证身份');
+    if (username == null || allowedUsers.indexOf(username) == -1) {
+        return NoAccess;
+    }
+
   const [createNewSession, currentIndex, removeSession] = useChatStore(
     (state) => [
       state.newSession,
@@ -457,9 +474,9 @@ export function Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+          <div className={styles["sidebar-title"]}>LeoHao's ChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
-            Build your own AI assistant.
+            Your own AI assistant.
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
