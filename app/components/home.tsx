@@ -471,7 +471,11 @@ export function Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>LeoHao|ChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
-            你正在使用LeoHao的个人ChatGPT服务<br/>该过程将产生一定的费用，请你不要随意分享给别人哦
+            你正在使用LeoHao的个人服务<br/>
+            该过程将产生一定的费用<br/>
+            请你不要随意分享给别人哦<br/>
+            如果对你有帮助<br/>
+            可以赞助我一下~
           </div>
           <div className={styles["sidebar-logo"]}>
             <WxPay />
