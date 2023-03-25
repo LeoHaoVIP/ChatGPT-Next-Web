@@ -459,7 +459,7 @@ export function Home() {
     return <Loading />;
   }
   //验证用户身份
-  const username: string | null = prompt('输入您的中文姓名以验证身份');
+  const username: string | null = prompt("输入您的中文姓名以验证身份");
   if (username == null || allowedUsers.indexOf(username) == -1) {
     return NoAccess;
   }
