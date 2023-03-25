@@ -28,7 +28,7 @@ import Locale from "../locales";
 import dynamic from "next/dynamic";
 import { REPO_URL } from "../constant";
 
-const allowedUsers: string[] = ['LeoHaoVIP', '赵文静', '赵梦静', '万志强', '谢宇', '杨明明'];
+const allowedUsers: string[] = ["LeoHaoVIP", "赵文静", "赵梦静", "万志强", "谢宇", "杨明明", "LH测试"];
 
 export function Loading(props: { noLogo?: boolean }) {
   return (
