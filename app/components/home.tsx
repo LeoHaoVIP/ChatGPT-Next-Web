@@ -473,7 +473,7 @@ export function Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>LeoHao's ChatGPT</div>
+          <div className={styles["sidebar-title"]}>LeoHao|ChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
             Your own AI assistant.
           </div>
