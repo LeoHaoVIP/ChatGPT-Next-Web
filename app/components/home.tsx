@@ -8,6 +8,7 @@ import styles from "./home.module.scss";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
+import AliPayIcon from "../icons/alipay.png";
 import SendWhiteIcon from "../icons/send-white.svg";
 import BrainIcon from "../icons/brain.svg";
 import ExportIcon from "../icons/export.svg";
@@ -470,10 +471,10 @@ export function Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>LeoHao|ChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
-            Your own AI assistant.
+            你正在使用LeoHao的个人ChatGPT服务，该过程将产生一定的费用，请你不要随意分享给别人哦
           </div>
           <div className={styles["sidebar-logo"]}>
-            <ChatGptIcon />
+            <AliPayIcon />
           </div>
         </div>
 
