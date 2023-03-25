@@ -8,7 +8,7 @@ import styles from "./home.module.scss";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
-import AliPayIcon from "../icons/alipay.png";
+import WxPay from "../icons/wxpay.svg";
 import SendWhiteIcon from "../icons/send-white.svg";
 import BrainIcon from "../icons/brain.svg";
 import ExportIcon from "../icons/export.svg";
@@ -474,7 +474,7 @@ export function Home() {
             你正在使用LeoHao的个人ChatGPT服务，该过程将产生一定的费用，请你不要随意分享给别人哦
           </div>
           <div className={styles["sidebar-logo"]}>
-            <AliPayIcon />
+            <WxPay />
           </div>
         </div>
 
