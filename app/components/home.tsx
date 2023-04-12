@@ -132,11 +132,15 @@ function _Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>LeoHao|ChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
-            你正在使用LeoHao的个人服务<br/>
-            该过程将产生一定的费用<br/>
-            请你不要随意分享给别人哦<br/>
-            如果对你有帮助<br/>
-            可以赞助我一下~
+            {/*你正在使用 LeoHao 的个人服务<br/>*/}
+            {/*该过程将产生一定的费用<br/>*/}
+            {/*请你不要随意分享给别人哦<br/>*/}
+            {/*如果对你有帮助<br/>*/}
+            {/*可以赞助我一下~<br/>*/}
+            截至2023年4月10日<br/>
+            OpenAI 额度已全部用完<br/>
+            无法继续提供服务<br/>
+            请等待 LeoHao 充值
           </div>
           <div className={styles["sidebar-logo"]}>
             <WxPay />
