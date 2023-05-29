@@ -6,6 +6,7 @@ import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
+import WxPay from "../icons/wxpay.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -119,12 +120,20 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>LeoHao|ChatGPT</div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          你正在使用 LeoHao 的个人服务<br/>
+          该过程将产生一定的费用<br/>
+          请你不要随意分享给别人哦<br/>
+          如果对你有帮助<br/>
+          可以赞助我一下~<br/>
+          {/*截至2023年4月10日<br/>*/}
+          {/*OpenAI 额度已全部用完<br/>*/}
+          {/*无法继续提供服务<br/>*/}
+          {/*请等待 LeoHao 充值*/}
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
-          <ChatGptIcon />
+          <WxPay />
         </div>
       </div>
 
